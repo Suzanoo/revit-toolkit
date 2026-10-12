@@ -1,0 +1,59 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+env/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Revit / pyRevit runtime
+*.addin.log
+*.journal
+*.slog
+*.log
+*.bak
+*.tmp
+*.temp
+
+# BIM model files
+*.rvt
+*.rfa
+*.rte
+*.rft
+*.ifc
+*.ifczip
+*.nwc
+*.nwd
+*.dwg
+*.dxf
+
+# Generated mapping and proof results
+MS0_RESULTS/
+evidence/
+rerun_evidence/
+capture.json
+recheck.json
+new_comparison.json
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+*.user
+*.suo
+
+# Archives / builds
+*.zip
+dist/
+build/

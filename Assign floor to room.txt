@@ -1,0 +1,41 @@
+CREATE FLOOR FROM ROOMS — REVIT 2026 / pyRevit
+================================================
+
+ติดตั้ง
+1. ปิด Revit ก่อน
+2. แตกไฟล์ ZIP
+3. นำโฟลเดอร์ RoomTools.extension ไปวางที่:
+
+   %APPDATA%\pyRevit\Extensions\
+
+   ตัวอย่าง:
+   C:\Users\YOUR_NAME\AppData\Roaming\pyRevit\Extensions\RoomTools.extension
+
+4. เปิด Revit ใหม่
+5. จะเห็น Tab: Room Tools
+6. ไปที่ Floor > Create Floor from Rooms
+
+วิธีใช้
+1. เลือก Room หนึ่งห้องหรือหลายห้อง
+2. กด Create Floor from Rooms
+3. เลือก Floor Type
+4. เลือก:
+   - Use Selected Type
+   - Duplicate Floor Type
+5. หาก Duplicate ให้ใส่ชื่อ Type ใหม่
+6. ตรวจสอบจำนวน Room แล้วกด Yes
+
+พฤติกรรม
+- ใช้ Level ของ Room อัตโนมัติ
+- รองรับ Room ที่มีช่องเปิดภายใน
+- Duplicate Floor Type จะคัดลอกโครงสร้างเดิมทั้งหมด
+- Floor ที่สร้างจะมี Comments:
+  Created from Room [Room Number - Room Name]
+- Room ที่ไม่ Enclosed หรือ Area = 0 จะถูกข้าม
+- แสดงรายการสำเร็จและรายการที่ถูกข้ามใน pyRevit Output
+
+ข้อควรทราบ
+- เวอร์ชันนี้สร้าง 1 Floor ต่อ 1 Room
+- ยังไม่รวมหลาย Room ให้เป็น Floor ชิ้นเดียว
+- ยังไม่ตรวจ Floor ซ้ำอัตโนมัติ
+- Duplicate Type จะยังไม่แก้ความหนาของ Layer

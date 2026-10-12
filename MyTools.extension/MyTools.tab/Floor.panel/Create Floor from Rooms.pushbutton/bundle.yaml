@@ -1,0 +1,9 @@
+title:
+  en_us: Create Floor
+from Rooms
+  th_th: สร้าง Floor
+จาก Room
+tooltip:
+  en_us: Create floors from selected room boundaries. Existing floor types can be used or duplicated.
+  th_th: สร้าง Floor ตามขอบเขต Room ที่เลือก และสามารถ Duplicate Floor Type ได้
+author: OpenAI
